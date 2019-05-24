@@ -1,0 +1,37 @@
+pytest --flakes .
+============================= test session starts ==============================
+platform linux -- Python 3.6.6, pytest-4.2.0, py-1.7.0, pluggy-0.8.1 -- /home/amauri/.pyenv/versions/3.6.6/envs/api/bin/python3.6
+cachedir: .pytest_cache
+Django settings: tests.settings (from environment variable)
+rootdir: /home/amauri/projects/api, inifile: pytest.ini
+plugins: mock-1.10.2, flakes-4.0.0, env-0.6.2, django-3.4.7, cov-2.6.1, celery-4.1.0
+collecting ... collected 1040 items
+
+tests/cases/financial/test_admin.py::test_broker_fee_field_is_in_display ...
+-> Not found temporary dump file with migrations, creating it ...
+-> Applying django migrations ...
+Operations to perform:
+  Apply all migrations: admin, approvalWorkflow, auditing, auth, authentication, cloudFetcher, contenttypes, dataFetcher, django_celery_beat, django_celery_results, financial, health, integrations, legacy, monthlyBudget, notification, oauth2_provider, plans, reserved_compute, scheduler, sessions, storage, subscriptions, terraform, tickets
+Running migrations:
+  Applying authentication.0067_remove_company_dollar_rate... OK
+  Applying cloudFetcher.0085_auto_20190429_1801... OK
+  Applying financial.0025_auto_20190422_1437... OK
+  Applying financial.0026_auto_20190429_1540... OK
+  Applying financial.0027_datamig_populate_client_currency_rate_20190422_1442... OK
+-> Exporting to path: /tmp/dump-test_onecloud-2019-05-13_12h25m23s246ms.sql
+-> Continuing the tests ...
+
+=============================== warnings summary ===============================
+cloudFetcher/provider_config/vmware.py
+  /home/amauri/projects/api/cloudFetcher/provider_config/vmware.py:226: DeprecationWarning: invalid escape sequence \.
+    if h.name.rstrip('\.') == host.name:
+
+dataFetcher/aws.py
+  /home/amauri/projects/api/dataFetcher/aws.py:32: DeprecationWarning: invalid escape sequence \S
+    '(^)?[^\S\n]*/(?:\*(.*?)\*/[^\S\n]*|/[^\n]*)($)?',
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+=================== 1040 passed, 2 warnings in 53.20 seconds ===================
+
+
+Removing temporary dump file with migrations from: /tmp/dump-test_onecloud-2019-05-13_12h25m23s246ms.sql
