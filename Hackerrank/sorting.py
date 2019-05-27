@@ -45,12 +45,9 @@ Restrições
 Formato de saída
 Imprima as três linhas de saída a seguir:
 
-A matriz é classificada em swaps numSwaps.
-onde está o número de trocas ocorridas.
-Primeiro Elemento: firstElement
-onde é o primeiro elemento na matriz classificada.
-Último elemento: lastElement
-onde é o último elemento na matriz classificada.
+A matriz é classificada em swaps numSwaps onde está o número de trocas ocorridas.
+Primeiro Elemento: onde firstElement é o primeiro elemento na matriz classificada.
+Último elemento: onde lastElement é o último elemento na matriz classificada.
 
 Entrada de Amostra 0
 3
@@ -83,3 +80,60 @@ A matriz a = [3, 2, 1] não está classificada, portanto, realizamos as seguinte
 Neste ponto, a matriz é classificada e nós imprimimos as 3 linhas necessárias de saída mostradas acima.
 """
 
+#!/bin/python3
+
+import sys
+
+
+n = int(input().strip())
+a = list(map(int, input().strip().split(' ')))
+# Write Your Code Here
+"""
+for i in range(n):
+    numSwaps = 0
+    for j in (n-1):
+        if a[j] > a[j + 1]:
+            (a[j], a[j + 1])
+            numSwaps += 1
+"""
+
+def bubble(arr):
+    count_swap = 0
+    for num in range(len(arr)-1, 0, -1):
+        for i in range(num):
+            if arr[i] > arr[i+1]:
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+                count_swap +=1
+    return count_swap
+
+print("Array is sorted in {} swaps.".format(bubble(a)))
+print("First Element: {}".format(a[0]))
+print("Last Element: {}".format(a[-1]))
+
+
+"""
+#!/bin/python3
+
+import sys
+
+n = int(input().strip())
+a = list(map(int, input().strip().split(' ')))
+# Write Your Code Here
+
+swaps = 0
+is_sorted = False
+
+while not is_sorted:
+    is_sorted = True
+    i = 0
+    for i in range(0, len(a)):
+        if i < len(a) - 1:
+            if a[i] > a[i+1]:
+                a[i], a[i+1] = a[i+1], a[i]
+                is_sorted = False
+                swaps += 1
+
+print('Array is sorted in {} swaps.'.format(swaps))
+print('First Element: {}'.format(a[0]))
+print('Last Element: {}'.format(a[len(a)-1]))
+"""
