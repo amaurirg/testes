@@ -1,0 +1,24 @@
+File: 512792422459-aws-billing-detailed-line-items-with-resources-and-tags-2019-05-closed
+
+InvoiceID
+PayerAccountId
+LinkedAccountId
+RecordType
+RecordId
+ProductName
+RateId
+SubscriptionId
+PricingPlanId
+UsageType
+Operation
+AvailabilityZone
+ReservedInstance
+ItemDescription
+UsageStartDate
+UsageEndDate
+UsageQuantity
+BlendedRate
+BlendedCost
+UnBlendedRate
+UnBlendedCost
+ResourceId

@@ -1,0 +1,1000 @@
+ 1004  cd /var/tivit-onecloud/api/app/
+ 1005  docker-compose exec mysql bash
+ 1006  docker ps
+ 1007  cd /var/tivit-onecloud/front/app
+ 1008  docker-compose restart
+ 1009  cd ../../api/app/
+ 1010  docker-compose exec api bash
+ 1011  cd /var/
+ 1012  ls
+ 1013  cd tivit-onecloud/
+ 1014  ls
+ 1015  cd app
+ 1016  cd tivit-onecloud/api
+ 1017  cd ~
+ 1018  cd /var/tivit-onecloud/api/app
+ 1019  ls
+ 1020  docker ps
+ 1021  telnet 10.254.123.10 80
+ 1022  curl 10.254.123.10
+ 1023  sudo systemctl restart NetworkManasger
+ 1024  sudo systemctl restart NetworkManager
+ 1025  cd /var/tivit-onecloud/api/app
+ 1026  ls
+ 1027  python manage.py help
+ 1028  oc-api-run python manage.py --help
+ 1029  oc-api-run python manage.py cc_daily_resource_subtotal_consolidation
+ 1030  oc-api-run python manage.py change_password tiago.barboza227
+ 1031  oc-api-run python manage.py setpassword tiago.barboza221
+ 1032  oc-api-run python manage.py --help
+ 1033  oc-api-run python manage.py changepassword tiago.barboza221
+ 1034  oc-api-run python manage.py changepassword tiago.barboza@tivit.com
+ 1035  oc-api-run python manage.py changepassword shell_plus
+ 1036  oc-api-run python manage.py shell_plus
+ 1037  cd /var/tivit-onecloud/api/app
+ 1038  ls
+ 1039  python manage.py migrate
+ 1040  docker exec -it api bash
+ 1041  cd /var/tivit-onecloud/api/app
+ 1042  docker exec -it api bash
+ 1043  oc-api-run python manage.py cc_daily_resource_subtotal_consolidation
+ 1044  cd /var/tivit-onecloud/
+ 1045  ls
+ 1046  cd v2
+ 1047  cd front
+ 1048  cd app
+ 1049  ls
+ 1050  cd build/
+ 1051  ls
+ 1052  cd html
+ 1053  ls
+ 1054  ls *cost*
+ 1055  vi cost-center-consolidated-77b755e799.html
+ 1056  c ..
+ 1057  cd ..
+ 1058  ls
+ 1059  cd ..
+ 1060  ls
+ 1061  cd app
+ 1062  ls
+ 1063  cd authenticated-comp
+ 1064  cd authenticated-components/
+ 1065  ls
+ 1066  cd cost-centers/
+ 1067  ls
+ 1068  vi cost-center-consolidated.html 
+ 1069  grep converted_total cost-center-consolidated.html 
+ 1070  docker ps
+ 1071  cd ..
+ 1072  ls
+ 1073  docker-compose restart -d
+ 1074  docker-compose restart
+ 1075  oc-api-run python manage.py cc_daily_resource_subtotal_consolidation
+ 1076  cd /var/tivit-onecloud/api/app
+ 1077  grep sql .env
+ 1078  cd /var/tivit-onecloud/api/app
+ 1079  oc-api-run python manage.py cc_daily_resource_subtotal_consolidation
+ 1080  #oc-api-run python manage.py 
+ 1081  d ps
+ 1082  cd /var/tivit-onecloud/api
+ 1083  ls
+ 1084  cd app/
+ 1085  ls
+ 1086  cat docker-compose.yml 
+ 1087  dc run --rm task-db-migrations
+ 1088  ls -la
+ 1089  cd
+ 1090  ls
+ 1091  vim onecloud-providers-prod.sql
+ 1092  #dc run --rm task-db-migrations
+ 1093  cd /var/tivit-onecloud/api/app
+ 1094  dc run --rm task-db-migrations
+ 1095  ip r s
+ 1096  screen
+ 1097  crontab -l
+ 1098  screen -x billing
+ 1099  screen -ls
+ 1100  screen -dmS billing
+ 1101  screen -x billing
+ 1102  ls
+ 1103  cd
+ 1104  ls
+ 1105  rm nohup.out dump-onecloud-201811141651.sql 
+ 1106  ls
+ 1107  c
+ 1108  vim onecloud-providers-prod.sql 
+ 1109  # onecloud-providers-prod.sql 
+ 1110  cd 
+ 1111  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-providers-prod.sql 
+ 1112  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud 
+ 1113  oc-api-run python manage.py migrate
+ 1114  crontab -l
+ 1115  crontab -e
+ 1116  date
+ 1117  crontab -e
+ 1118  crontab -l
+ 1119  date
+ 1120  touch /tmp/update_billing2.log
+ 1121  crontab -l
+ 1122  vim /tmp/update_billing2.log
+ 1123  ip r s
+ 1124  #mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud > DUMP-onecloud-prd-providers.sql
+ 1125  ls
+ 1126  mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud > DUMP-onecloud-prd-providers.sql
+ 1127  cd 
+ 1128  mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud > DUMP-onecloud-prd-providers.sql
+ 1129  echo $?
+ 1130  ls -la
+ 1131  ls -lah
+ 1132  rm onecloud-providers-prod.sql 
+ 1133  ls -la
+ 1134  cp DUMP-onecloud-prd-providers.sql /home/cloud-user/
+ 1135  sudo cp DUMP-onecloud-prd-providers.sql /home/cloud-user/
+ 1136  d ps
+ 1137  free -m
+ 1138  crontab -l
+ 1139  oc-api-run python manage.py update_billing2 --help
+ 1140  oc-api-run python manage.py update_billing2 --providers-types aws --provider-config-ids 207
+ 1141  oc-api-run python manage.py update_billing2 --providers-types aws 
+ 1142  ls
+ 1143  vim onecloud-antigo-20180724.sql 
+ 1144  #mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-antigo-20180724.sql 
+ 1145  free -m
+ 1146  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-antigo-20180724.sql 
+ 1147  echo $?
+ 1148  crontab -l
+ 1149  oc-api-run python manage.py migrate
+ 1150  echo $?
+ 1151  oc-api-run python manage.py update_billing2 --providers-types aws --provider-config-ids 207
+ 1152  oc-api-run python manage.py update_billing2 --providers-types aws 
+ 1153  oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 207
+ 1154  oc-api-run python manage.py update_billing2 --providers-types aws
+ 1155  d ps
+ 1156  cd /var/tivit-onecloud/api/app
+ 1157  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < /home/cloud-user/onecloud-antigo-20180724.sql 
+ 1158  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud 
+ 1159  oc-api-run python manage.py migrate
+ 1160  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud 
+ 1161  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < /home/cloud-user/DUMP-onecloud-prd-providers.sql 
+ 1162  echo $?
+ 1163  oc-api-run python manage.py migrate
+ 1164  cd ..
+ 1165  ls
+ 1166  cd assets/billing/
+ 1167  find .
+ 1168  find . -type f
+ 1169  find . -type f -delete
+ 1170  sudo find . -type f -delete
+ 1171  oc-api-run python manage.py migrate
+ 1172  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237
+ 1173  vim ~/.bashrc 
+ 1174  c
+ 1175  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < /home/cloud-user/DUMP-onecloud-prd-providers.sql 
+ 1176  echo $?
+ 1177  c; oc-api-run python manage.py migrate
+ 1178  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237
+ 1179  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 201905
+ 1180  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-05
+ 1181  ls -la /var/tivit-onecloud/api/assets/billing/aws/483348221844-aws-billing-detailed-line-items-with-resources-and-tags-2019-05.csv.zip
+ 1182  cd 
+ 1183  cd /tmp/
+ 1184  ls
+ 1185  mkdir 1
+ 1186  cd 1/
+ 1187  unzip /var/tivit-onecloud/api/assets/billing/aws/483348221844-aws-billing-detailed-line-items-with-resources-and-tags-2019-05.csv.zip
+ 1188  cat /var/tivit-onecloud/api/assets/billing/aws/483348221844-aws-billing-detailed-line-items-with-resources-and-tags-AWSMarketplace-2019-05.csv
+ 1189  ls -la /var/tivit-onecloud/api/assets/billing/aws/483348221844-aws-billing-detailed-line-items-with-resources-and-tags-AWSMarketplace-2019-05.csv
+ 1190  ls -la /var/tivit-onecloud/api/assets/billing/aws/483348221844-aws-billing-detailed-line-items-with-resources*
+ 1191  ls -la /var/tivit-onecloud/api/assets/billing/aws/483348221844-aws-billing-detailed-line-items-with-resources*csv
+ 1192  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-05
+ 1193  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-04
+ 1194  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-03
+ 1195  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-02
+ 1196  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-05
+ 1197  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-04
+ 1198  crontab -e
+ 1199  ps -ef
+ 1200  ps -ef | grep oc
+ 1201  ps -ef | grep "oc\-"
+ 1202  c; oc-api-run python manage.py shell_plus
+ 1203  c; oc-api-run python manage.py migrate
+ 1204  ip r s
+ 1205  oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-05
+ 1206  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud
+ 1207  c; oc-api-run python manage.py migrate
+ 1208  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud
+ 1209  ~mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < DUMP-onecloud-prd-providers.sql 
+ 1210  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < DUMP-onecloud-prd-providers.sql 
+ 1211  echo $?
+ 1212  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud 
+ 1213  c; oc-api-run python manage.py migrate cost_center zero
+ 1214  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud 
+ 1215  #mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud 
+ 1216  vim onecloud-limpissimo.sql 
+ 1217  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1218  echo $?
+ 1219  mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud > onecloud-limpissimo.sql 
+ 1220  oc-api-run python manage.py migrate
+ 1221  d ps
+ 1222  oc-api-run python manage.py migrate
+ 1223  c
+ 1224  #mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud 
+ 1225  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud 
+ 1226  mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud > onecloud-limpissimo.sql 
+ 1227  cd
+ 1228  ls
+ 1229  rm DUMP-onecloud-prd-providers.sql 
+ 1230  mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud > onecloud-limpissimo.sql 
+ 1231  mv onecloud-limpissimo.sql /home/cloud-user/
+ 1232  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-05
+ 1233  echo $?
+ 1234  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud
+ 1235  c; oc-api-run python manage.py update_billing2 --providers-types aws --company-ids 237 --date 2019-04
+ 1236  d ps
+ 1237  ls
+ 1238  cd
+ 1239  ls
+ 1240  vim onecloud
+ 1241  vim onecloud-limpissimo.sql 
+ 1242  c
+ 1243  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1244  echo $?
+ 1245  oc-api-run python manage.py migrate
+ 1246  #oc-api-run python manage.py update_billing2 --providers-types aws --date 2019-05
+ 1247  c
+ 1248  c; oc-api-run python manage.py update_billing2 --providers-types aws --date 2019-05
+ 1249  #c; oc-api-run python manage.py update_billing2 --providers-types aws --date 2019-05 --provider-config-ids 
+ 1250  c; oc-api-run python manage.py update_billing2 --providers-types aws --date 2019-05 --provider-config-ids 2189
+ 1251  oc-api-run python manage.py update_billing2 --providers-types aws --date 2019-05 --provider-config-ids 218
+ 1252  oc-api-run python manage.py update_billing2 --providers-types aws --date 2019-05 --provider-config-ids 2189
+ 1253  docker ps
+ 1254  cd /opt/ansible-playbooks/
+ 1255  date; make onecloud_uat_full 
+ 1256  source .venv/bin/activate
+ 1257  date; make onecloud_uat_full 
+ 1258  vim /home/onecloud/.ansible-vault
+ 1259  date; make onecloud_uat_full 
+ 1260  vim env_settings/onecloud-uat.yml 
+ 1261  ls -la
+ 1262  cd /opt/ansible-playbooks/
+ 1263  source .venv/bin/activate
+ 1264  date; make onecloud_uat_full 
+ 1265  docker ps
+ 1266  docker-compose log worker
+ 1267  docker-compose logs worker
+ 1268  la
+ 1269  cdc
+ 1270  cd /var/tivit-onecloud/
+ 1271  la
+ 1272  cd /var/tivit-onecloud/api/
+ 1273  la
+ 1274  cd app/
+ 1275  la
+ 1276  docker-compose logs worker
+ 1277  ls
+ 1278  ls
+ 1279  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1280  cd
+ 1281  cd .ssh
+ 1282  ls
+ 1283  cat known_hosts 
+ 1284  ssh -p 1215 ubuntu@52.72.64.27
+ 1285  ssh-add ~/.ssh/api.key 
+ 1286  cd /var/tivit-onecloud/app/api
+ 1287  cd /var/tivit-onecloud/
+ 1288  ls
+ 1289  cd app
+ 1290  cd api
+ 1291  cd app
+ 1292  ls
+ 1293  cd ..
+ 1294  cd
+ 1295  ls -la
+ 1296  cat .ansible/
+ 1297  cd .ansible
+ 1298  ls
+ 1299  cd ..
+ 1300  cd /var/tivit-onecloud/api/app
+ 1301  docker ps
+ 1302  cd opt/ansible
+ 1303  cd /opt/ansible
+ 1304  cd /opt/ansible-playbooks/
+ 1305  ls -la
+ 1306  vim env_settings/onecloud-dev.yml 
+ 1307  ls
+ 1308  cd
+ 1309  ls
+ 1310  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1311  contrab -l
+ 1312  cd
+ 1313  contrab -l
+ 1314  crontab -l
+ 1315  nohup oc-api-run python manage.py providers_update --settings=api.settings.base
+ 1316  #nohup oc-api-run python manage.py providers_update --settings=api.settings.base &
+ 1317  ps -ef
+ 1318  ps -ef | grep manage
+ 1319  nohup oc-api-run python manage.py providers_update --settings=api.settings.base &
+ 1320  tail -f nohup.out
+ 1321  crontab -l
+ 1322  nohup oc-api-run python manage.py sync_provider_resources --settings=api.settings.base &
+ 1323  tail -f nohup.out
+ 1324  cd /var/tivit-onecloud/api/app
+ 1325  docker-compose restart api
+ 1326  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 
+ 1327  docker ps
+ 1328  docker ps -a
+ 1329  docker images
+ 1330  docker ps -a
+ 1331  docker-compose restart worker
+ 1332  docker-compose restart api
+ 1333  cd /var/tivit-onecloud/api/app
+ 1334  docker-compose restart worker
+ 1335  docker ps
+ 1336  la
+ 1337  cd ~
+ 1338  la
+ 1339  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1340  cd /var/tivit-onecloud/api
+ 1341  la
+ 1342  cd app/
+ 1343  la
+ 1344  python manage.py migrate
+ 1345  oc-api-run python manage.py migrate
+ 1346  la
+ 1347  docker ps
+ 1348  crontab -l
+ 1349  oc-api-run python manage.py providers_update --settings=api.settings.base
+ 1350  cd
+ 1351  la
+ 1352  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud
+ 1353  cd /var/tivit-onecloud/api/app
+ 1354  la
+ 1355  oc-api-run python manage.py migrate
+ 1356  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud
+ 1357  cd
+ 1358  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud_backup_2018_12_26.sql 
+ 1359  sudo su onecloud 
+ 1360  cd /var/tivit-onecloud/api/app
+ 1361  la
+ 1362  docker ps
+ 1363  la
+ 1364  oc-api-run python manage.py migrate
+ 1365  la
+ 1366  docker logs
+ 1367  docker-compose logs
+ 1368  docker-compose restart
+ 1369  docker-compose logs
+ 1370  docker-compose logs api
+ 1371  docker-compose logs rabbitmq
+ 1372  docker-compose logs scheduler
+ 1373  docker-compose restart scheduler/
+ 1374  docker-compose restart scheduler
+ 1375  docker-compose logs scheduler/
+ 1376  docker-compose logs scheduler
+ 1377  docker-compose logs worker
+ 1378  docker-compose logs beat
+ 1379  docker-compose logs scheduler
+ 1380  docker-composeup
+ 1381  docker-compose up
+ 1382  dcup -d
+ 1383  docker-compose up -d
+ 1384  la
+ 1385  cd /var/tivit-onecloud/
+ 1386  ls -la
+ 1387  cd api
+ 1388  cd assets/
+ 1389  ls -la
+ 1390  cd billing/
+ 1391  ls -la
+ 1392  cd aws/
+ 1393  ls -la
+ 1394  docker ps
+ 1395  cd /var/tivit-onecloud/api/app
+ 1396  oc-api-run python manage.py migrate
+ 1397  la
+ 1398  cd ~
+ 1399  la
+ 1400  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud_backup_2018_12_26.sql 
+ 1401  cd /var/tivit-onecloud/api/assets/billing/
+ 1402  ls
+ 1403  ls aws
+ 1404  ls -la aws
+ 1405  cd /var/tivit-onecloud/api/assets/
+ 1406  cd billing/
+ 1407  cd aws/
+ 1408  ls
+ 1409  mysql -uroot -pA54d113e -h127.0.0.1 -P3306
+ 1410  oc-api-run python manage.py dbshell
+ 1411  dockerps
+ 1412  docker ps
+ 1413  cd
+ 1414  docker ps
+ 1415  ls
+ 1416  cd
+ 1417  ls
+ 1418  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1419  crontab -l
+ 1420  free -h
+ 1421  top
+ 1422  ls -lah /var/tivit-onecloud/api/assets/billing/aws/512792422459-aws-billing-detailed-line-items-2019-06.csv
+ 1423  cd /var/tivit-onecloud/api/assets/
+ 1424  cd billing/aws/
+ 1425  ls
+ 1426  ls -lah 512792422459-aws-billing-detailed-line-items-2019-06.csv
+ 1427  ls -lah 12792422459-aws-billing-detailed-line-items-with-resources-and-tags-2019-06.csv
+ 1428  ls -lah 512792422459-aws-billing-detailed-line-items-with-resources-and-tags-2019-06.csv
+ 1429  time
+ 1430  date
+ 1431  time ls
+ 1432  ls -latrh
+ 1433  top
+ 1434  docker ps
+ 1435  docker ps
+ 1436  oc-api-run python manage.py billing_update
+ 1437  ls
+ 1438  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1439  cd
+ 1440  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1441  oc-api-run python manage.py migrate
+ 1442  oc-api-run python manage.py billing_update --providers-types aws
+ 1443  cd
+ 1444  ls
+ 1445  rm nohup.out 
+ 1446  nohup oc-api-run python manage.py update_billing -providers-types aws
+ 1447  cat nohup.out 
+ 1448  ps -ef
+ 1449  ps -ef | grep python
+ 1450  rm nohup.out 
+ 1451  nohup oc-api-run python manage.py update_billing --providers-types aws &
+ 1452  tail -f nohup.out 
+ 1453  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1454  tail -f nohup.out 
+ 1455  ps -ef | grep python
+ 1456  kill -9 4328
+ 1457  ps -ef | grep python
+ 1458  kill -9 4331
+ 1459  ps -ef | grep python
+ 1460  kill -9 4425
+ 1461  ps -ef | grep python
+ 1462  cd
+ 1463  rm nohup.out 
+ 1464  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1465  tail -f nohup.out 
+ 1466  docker ps
+ 1467  rm nohup.out 
+ 1468  tail -f nohup.out 
+ 1469  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1470  tail -f nohup.out 
+ 1471  oc-api-run python manage.py dbshell
+ 1472  cd
+ 1473  ls
+ 1474  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < onecloud-limpissimo.sql 
+ 1475  docker sps
+ 1476  docker ps
+ 1477  cd /var/tivit-onecloud/api/app
+ 1478  docker-compose stop mysql
+ 1479  docker-compose up -d mysql
+ 1480  docker ps
+ 1481  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1482  tail -f nohup.out 
+ 1483  oc-api-run python manage.py migrate
+ 1484  rm nohup.out 
+ 1485  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1486  tail -f nohup.out 
+ 1487  cd
+ 1488  tail -f nohup.out 
+ 1489  ps ef | grep python
+ 1490  ps ef | grep billing
+ 1491  ps -gaux | grep python
+ 1492  sudo
+ 1493  ps -gaux | grep python
+ 1494  cd
+ 1495  ls
+ 1496  mv nohup.out log_billing_modeificado.log
+ 1497  ls
+ 1498  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1499  cd
+ 1500  tail -f nohup.out 
+ 1501  ps -gaux | grep billing
+ 1502  ls
+ 1503  cd
+ 1504  ls
+ 1505  mv nohup.out log_billing_original.log 
+ 1506  ls
+ 1507  mv log_billing_modeificado.log log_billing_modificado.log
+ 1508  ls
+ 1509  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1510  tail -f nohup.out 
+ 1511  ps -gaux | grep billing
+ 1512  cd
+ 1513  ls
+ 1514  mv nohup.out log_billing_voltei_transaction.log
+ 1515  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1516  tail -f nohup.out 
+ 1517  cd
+ 1518  tail -f nohup.out 
+ 1519  cd
+ 1520  ls
+ 1521  cat log_billing_modeificado.log 
+ 1522  ls
+ 1523  cat log_billing_original.log 
+ 1524  cat log_billing_modificado.log 
+ 1525  cat log_billing_original.log 
+ 1526  cat log_billing_modificado.log 
+ 1527  cd
+ 1528  ls 
+ 1529  tail nohup.out 
+ 1530  mv nohup.out log_billing_completo_codigo_modificado.log
+ 1531  docker ps
+ 1532  cd
+ 1533  ps -gaux | grep billing
+ 1534  tail -f nohup.out 
+ 1535  cd
+ 1536  ls
+ 1537  #nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1538  docker ps
+ 1539  nohup oc-api-run python manage.py billing_update --providers-types aws &
+ 1540  tail -f nohup.out 
+ 1541  cd
+ 1542  cat log_billing_completo_codigo_original.log 
+ 1543  head -n 100 log_billing_completo_codigo_modificado.log 
+ 1544  tail log_billing_completo_codigo_modificado.log 
+ 1545  vi log_billing_completo_codigo_modificado.log 
+ 1546  ls
+ 1547  cd
+ 1548  ls
+ 1549  cat nohup.out 
+ 1550  ls
+ 1551  mv nohup.out log_billing_completo_codigo_original.log 
+ 1552  expect -f /tmp/deepin-terminal-FUGH4Z
+ 1553  cat log_billing_completo_codigo_modificado.log 
+ 1554  head -n 100 log_billing_completo_codigo_original.log 
+ 1555  tail log_billing_completo_codigo_original.log 
+ 1556  vi log_billing_completo_codigo_original.log 
+ 1557  cd /var/tivit-onecloud/api/assets/billing/aws/
+ 1558  ls
+ 1559  ls *closed*
+ 1560  ls *2019-06*closed*
+ 1561  ls *2019*
+ 1562  ls -latr
+ 1563  ls 512792422459*
+ 1564  ls -latr 512792422459*
+ 1565  ls -latrh 512792422459*
+ 1566  cat 512792422459-aws-billing-csv-2019-07.csv
+ 1567  ls -latrh 512792422459*
+ 1568  #nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1569  docker ps
+ 1570  mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud financial_billitem > tabela_billitem_mes_6.sql 
+ 1571  cd
+ 1572  mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud financial_billitem > tabela_billitem_mes_6.sql 
+ 1573  ls
+ 1574  ls -latr
+ 1575  ls -latrh 
+ 1576  ls
+ 1577  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1578  tail -f nohup.out 
+ 1579  ps -gaux | grep billing
+ 1580  docker ps
+ 1581  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1582  tail -f nohup.out 
+ 1583  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1584  tail -f nohup.out 
+ 1585  ps gaux | grep billing
+ 1586  sudo kill -9 5446
+ 1587  cd
+ 1588  oc-api-run python manage.py dbshell
+ 1589  cd
+ 1590  ls
+ 1591  tail -f nohup.out 
+ 1592  ps -gaux | grep billing
+ 1593  oc-api-run python manage.py dbshell
+ 1594  oc-api-run python manage.py shell_plus
+ 1595  clear
+ 1596  ls -latr
+ 1597  ls -la
+ 1598  ls
+ 1599  rm nohup.out 
+ 1600  ls
+ 1601  docker ps
+ 1602  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1603  tail -f nohup.out 
+ 1604  ps -gaux | grep billing
+ 1605  ps gaux | grep billing
+ 1606  cd
+ 1607  oc-api-run python manage.py dbshell
+ 1608  oc-api-run python manage.py shell_plus
+ 1609  cd
+ 1610  ls
+ 1611  cd /var/tivit-onecloud/api/app
+ 1612  ls
+ 1613  cd financial/
+ 1614  ls
+ 1615  cd billing/
+ 1616  ls
+ 1617  vi aws.py
+ 1618  docker ps
+ 1619  cd
+ 1620  docker ps
+ 1621  expect -f /tmp/deepin-terminal-02I63Z
+ 1622  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1623  tail -f nohup.out 
+ 1624  ps -gaux | grep billing
+ 1625  cd
+ 1626  cat log_delete_com_between.log 
+ 1627  ps -gaux | grep billing
+ 1628  cd
+ 1629  oc-api-run python manage.py dbshell
+ 1630  oc-api-run python manage.py dbshell -A
+ 1631  ls
+ 1632  tail tabela_billitem_mes_6.sql
+ 1633  tail -n 50 tabela_billitem_mes_6.sql
+ 1634  tail -n 10 tabela_billitem_mes_6.sql
+ 1635  tail -n 20 tabela_billitem_mes_6.sql
+ 1636  ls -latrh
+ 1637  oc-api-run python manage.py dbshell 
+ 1638  cat log_delete_com_between.log 
+ 1639  cd
+ 1640  ls
+ 1641  cd /var/tivit-onecloud/api/app/financial/billing/
+ 1642  ls
+ 1643  vi aws.py
+ 1644  cat log_delete_com_between.log 
+ 1645  cd
+ 1646  cat log_delete_com_between.log 
+ 1647  ls
+ 1648  cd
+ 1649  ls
+ 1650  #mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < tabela_billitem_mes_6.sql 
+ 1651  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < tabela_billitem_mes_6.sql 
+ 1652  cd
+ 1653  cat log_delete_com_between.log 
+ 1654  ls
+ 1655  cd
+ 1656  ls
+ 1657  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < tabela_billitem_mes_6.sql 
+ 1658  docker ps
+ 1659  ls
+ 1660  mv tabela_billitem_mes_6.sql tabela_billitem_full.sql
+ 1661  mysqldump -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud financial_billitem --where "payer_account_id = 2189 and usage_day >= '2019-06-01' and usage_day <= '2019-06-30'" > tabela_billitem_mes_6.sql 
+ 1662  ls -latr
+ 1663  ls -latrh
+ 1664  ls
+ 1665  cat log_delete_limite_3000.log 
+ 1666  cd
+ 1667  ls -la
+ 1668  ls
+ 1669  rm nohup.out 
+ 1670  ls
+ 1671  oc-api-run python manage.py dbshell
+ 1672  ls
+ 1673  mysql -uroot -pA54d113e -h127.0.0.1 -P3306 onecloud < tabela_billitem_mes_6.sql 
+ 1674  oc-api-run python manage.py dbshell
+ 1675  cd
+ 1676  ls
+ 1677  ls
+ 1678  cd
+ 1679  ls
+ 1680  mv nohup.out log_delete_com_between.log
+ 1681  cd /var/tivit-onecloud/api/app
+ 1682  ls
+ 1683  cd financial/billing/
+ 1684  vi aws.py
+ 1685  cd
+ 1686  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1687  tail -f nohup.out 
+ 1688  ls
+ 1689  rm nohup.out 
+ 1690  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1691  tail -f nohup.out 
+ 1692  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1693  tail -f nohup.out 
+ 1694  cd /var/tivit-onecloud/api/app/financial/billing/
+ 1695  vi aws.py
+ 1696  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1697  cd
+ 1698  cd -
+ 1699  ls
+ 1700  tail -f nohup.out 
+ 1701  mv nohup.out ~/log_delete_limite_3000.log
+ 1702  docker ps
+ 1703  ls
+ 1704  cd
+ 1705  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1706  tail -f nohup.out 
+ 1707  cd /var/tivit-onecloud/api/app/financial/billing/
+ 1708  vi aws.py
+ 1709  cd
+ 1710  ls
+ 1711  rm nohup.out 
+ 1712  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1713  tail -f nohup.out 
+ 1714  vi /var/tivit-onecloud/api/app/financial/billing/aws.py 
+ 1715  cd
+ 1716  ls
+ 1717  rm nohup.out 
+ 1718  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1719  tail -f nohup.out 
+ 1720  cd
+ 1721  ls
+ 1722  cat nohup.out 
+ 1723  expect -f /tmp/deepin-terminal-Q6WG4Z
+ 1724  la
+ 1725  ls
+ 1726  cd api
+ 1727  ls
+ 1728  cd assets/
+ 1729  ls
+ 1730  cd billing/
+ 1731  ls
+ 1732  cd aws/
+ 1733  ls
+ 1734  cd
+ 1735  ls
+ 1736  grep reset_value log_delete_limite_3000.log
+ 1737  cd
+ 1738  oc-api-run python manage.py dbshell
+ 1739  cd
+ 1740  oc-api-run python manage.py dbshell
+ 1741  cd
+ 1742  oc-api-run python manage.py dbshell
+ 1743  #nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1744  ls
+ 1745  mv nohup.out nohup.out.old
+ 1746  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1747  tail -f nohup.out
+ 1748  cd
+ 1749  ls
+ 1750  tail nohup.out
+ 1751  mv nohup.out log_billing_completo_codigo_4_jul.log
+ 1752  ls
+ 1753  tail log_billing_completo_codigo_original.log log_billing_completo_codigo_4_jul.log
+ 1754  ps -gaux | grep python
+ 1755  crontab -e
+ 1756  crontab -l
+ 1757  cd
+ 1758  ls
+ 1759  nohup oc-api-run python manage.py billing_update --providers-types aws --date 2019-06 &
+ 1760  tail -f nohup.out
+ 1761  cd
+ 1762  ls
+ 1763  vi log_billing_completo_codigo_original_4_jul.log
+ 1764  vi log_billing_completo_codigo_modificado_4_jul.log 
+ 1765  cd
+ 1766  ls
+ 1767  mv nohup.out log_billing_completo_codigo_original_4_jul.log
+ 1768  mv log_billing_completo_codigo_4_jul.log log_billing_completo_codigo_modificado_4_jul.log
+ 1769  ls
+ 1770  tail log_billing_completo_codigo_original_4_jul.log
+ 1771  tail log_billing_completo_codigo_original_4_jul.log log_billing_completo_codigo_modificado_4_jul.log
+ 1772  pwd
+ 1773  cd .oc
+ 1774  sudo su onecloud
+ 1775  cd ..
+ 1776  pwd
+ 1777  ls
+ 1778  cd onecloud/
+ 1779  cd .oc
+ 1780  ls
+ 1781  cd azure_csp/
+ 1782  cd keys/
+ 1783  ls
+ 1784  cat br.json 
+ 1785  cd /opt/ansible-playbooks/
+ 1786  ls
+ 1787  git pull
+ 1788  cd /opt/ansible-playbooks/
+ 1789  make onecloud_uat_api 
+ 1790  pwd
+ 1791  crontab -l
+ 1792  ls
+ 1793  cd
+ 1794  ls
+ 1795  which oc-api-run
+ 1796  cd /usr/bin/
+ 1797  ls -la
+ 1798  cat oc-api-run
+ 1799  cd /var/tivit-onecloud/api/app
+ 1800  ls
+ 1801  cd /usr/local/bin/
+ 1802  ls
+ 1803  cat docker-compose 
+ 1804  cat oc-api-run
+ 1805  cd /var/tivit-onecloud/api/app
+ 1806  cat oc-api-run
+ 1807  cd /usr/local/bin/
+ 1808  cat oc-api-run
+ 1809  which oc-api-run
+ 1810  cd /usr/bin/
+ 1811  cat oc-api-run
+ 1812  ls
+ 1813  cat oc-api-run
+ 1814  cat oc-front-run
+ 1815  cat oc-api-run
+ 1816  crontab -e
+ 1817  sudo su cloud-user
+ 1818  ssh ubuntu@52.72.73.237 -p 1215
+ 1819  docker ps
+ 1820  crontab -e
+ 1821  cd /var/mail/
+ 1822  ls
+ 1823  cat onecloud 
+ 1824  crontab -e
+ 1825  cd
+ 1826  pwd
+ 1827  cd /usr/bin/
+ 1828  vim exec_billing
+ 1829  sudo vim exec_billing
+ 1830  who
+ 1831  whoami
+ 1832  ls -la
+ 1833  vim exec_billing
+ 1834  ls | grep exec*
+ 1835  vim exec_billing
+ 1836  ls | grep exec_*
+ 1837  cd
+ 1838  mkdir teste
+ 1839  vim exec_billing
+ 1840  cp exec_billing /usr/bin/
+ 1841  ls
+ 1842  cd /var/tivit-onecloud/api/app
+ 1843  ls
+ 1844  cd api
+ 1845  ls
+ 1846  cd ..
+ 1847  ls
+ 1848  cd financial/
+ 1849  ls
+ 1850  cd management/
+ 1851  ls
+ 1852  cd commands/
+ 1853  ls
+ 1854  cd ....
+ 1855  cd ../..
+ 1856  cd ..
+ 1857  cd
+ 1858  cd teste/
+ 1859  ls
+ 1860  ls -la
+ 1861  vim exec_billing
+ 1862  cd 
+ 1863  pwd
+ 1864  crontab -e
+ 1865  vim exec_billing
+ 1866  cd /var/tivit-onecloud/
+ 1867  ls -la
+ 1868  ls[
+ 1869  ls
+ 1870  cd ~/teste/
+ 1871  ls
+ 1872  cp exec_billing /usr/bin/
+ 1873  cd -
+ 1874  cd api
+ 1875  ls
+ 1876  cd app/
+ 1877  ls
+ 1878  python manage.py check_billing_execution_status
+ 1879  python3 manage.py check_billing_execution_status
+ 1880  python3 manage.py check_billing_execution_status.py
+ 1881  vim manage.py 
+ 1882  python3 manage.py check_billing_execution_status.py
+ 1883  vim manage.py 
+ 1884  docker ps
+ 1885  ls
+ 1886  cd api
+ 1887  ls
+ 1888  cd settings/
+ 1889  ls
+ 1890  cd ..
+ 1891  ls
+ 1892  cd financial/management/commands/
+ 1893  ls
+ 1894  python3
+ 1895  cd ~/teste
+ 1896  ls
+ 1897  vim exec_billing 
+ 1898  crontab -e
+ 1899  exec_billing 
+ 1900  crontab -e
+ 1901  crontab -l
+ 1902  cd /usr/bin/
+ 1903  ls
+ 1904  which ansible
+ 1905  crontab -e
+ 1906  cd
+ 1907  ls -la
+ 1908  cd .oc/
+ 1909  ls
+ 1910  cd ../.ansible/
+ 1911  ls
+ 1912  cd cp
+ 1913  ls
+ 1914  ls -la
+ 1915  cd ..
+ 1916  ls
+ 1917  cd cp
+ 1918  ls
+ 1919  cd ../tmp/
+ 1920  ls
+ 1921  cd ..
+ 1922  ls -la
+ 1923  find ~ -iname ansible
+ 1924  cd ..
+ 1925  ls
+ 1926  vim /usr/bin/exec_billing
+ 1927  crontab -e
+ 1928  cd teste/
+ 1929  ls
+ 1930  cat exec_billing 
+ 1931  vim exec_billing 
+ 1932  cd
+ 1933  docker exec api bash
+ 1934  docker-compose exec api bash
+ 1935  cd
+ 1936  cd /var/tivit-onecloud/api/app/
+ 1937  docker-compose exec api bash
+ 1938  crontab -e
+ 1939  ps -ef | grep exec*
+ 1940  ps -ef | grep exec_billing
+ 1941  ps -ef
+ 1942  cd /usr/bin/
+ 1943  ls
+ 1944  ls | grep exec_billing 
+ 1945  vim exec_billing 
+ 1946  cd
+ 1947  cd /var/tivit-onecloud/api/
+ 1948  ls
+ 1949  cd app
+ 1950  ls
+ 1951  python3 manage.py billing_update --date 2019-08 --providers-types aws
+ 1952  vim manage.py
+ 1953  python3 manage.py billing_update --date 2019-08 --providers-types aws
+ 1954  python manage.py billing_update --date 2019-08 --providers-types aws
+ 1955  vim manage.py
+ 1956  git status
+ 1957  cd /var/tivit-onecloud/
+ 1958  ls
+ 1959  sudo ls
+ 1960  cd ansible
+ 1961  cd ansible-playbooks
+ 1962  cd ansible-playbook
+ 1963  cd api
+ 1964  ls
+ 1965  cd assets/
+ 1966  ls
+ 1967  cd ..
+ 1968  ls
+ 1969  cd logs/
+ 1970  ls
+ 1971  cat api.log
+ 1972  cd ..
+ 1973  cd app
+ 1974  ls
+ 1975  doker ps
+ 1976  docker ps
+ 1977  cat docker-compose.yml 
+ 1978  cd ..
+ 1979  ls
+ 1980  ls -la
+ 1981  python3 manage.py billing_update --date 2019-08 --providers-types aws
+ 1982  cd app
+ 1983  python3 manage.py billing_update --date 2019-08 --providers-types aws
+ 1984  pyenv versions
+ 1985  crontba -l
+ 1986  crontab -l
+ 1987  cd /usr/bin/
+ 1988  ls
+ 1989  ls | grep exec*
+ 1990  mv exec_billing billing_execution
+ 1991  vim billing_execution 
+ 1992  cat /etc/cron.allow
+ 1993  ls | grep bill*
+ 1994  cat billing_execution 
+ 1995  history
+ 1996  oc-api-run python manage.py dbshell
+ 1997  oc-api-run python manage.py check_billing_execution_status
+ 1998  oc-api-run python manage.py python manage.py billing_update --date 2019-08 --providers-types gce
+ 1999  which oc-api-run
+ 2000  cd ../bin/
+ 2001  cd ../../bin/
+ 2002  cat oc-api-run 
+ 2003  history > ~/histoy_dev.txt

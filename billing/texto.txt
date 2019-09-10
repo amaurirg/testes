@@ -1,0 +1,5 @@
+bill/PayerAccountId         = 512792422459
+lineItem/UsageAccountId     = 197909079188
+product/subscriptionType    = None
+reservation/SubscriptionId  = 2490218539
+
